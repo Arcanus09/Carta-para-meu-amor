@@ -30,7 +30,7 @@
       font-size: 2rem;
       text-align: center; /* Centraliza o título */
       margin-bottom: 20px;
-      animation: jump 1s infinite;
+      animation: pulse 1s infinite; /* Adiciona o efeito pulsante */
     }
     .trecho {
       opacity: 0;
@@ -41,11 +41,11 @@
     .trecho.visivel {
       opacity: 1;
     }
-    /* Efeito de pulo para o título, remetendo ao salto do Mario */
-    @keyframes jump {
-      0% { transform: translateY(0); }
-      50% { transform: translateY(-20px); }
-      100% { transform: translateY(0); }
+    /* Efeito pulsante para o título */
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.1); opacity: 0.8; }
+      100% { transform: scale(1); opacity: 1; }
     }
   </style>
 </head>
@@ -56,7 +56,7 @@
     <p class="trecho">Tenho uma mensagem especial que aguarda você.</p>
     <p class="trecho">Meu amor, eu não poderia começar essa carta sem te chamar de meu amor.</p>
     <p class="trecho">Achou que não ia ter carta por aqui também? Pois tem carta aqui, tem carta física, e se duvidar, eu mando até uma mensagem no correio dos Toads para garantir que você leia tudo direitinho. Então se prepare, porque hoje é dia de farmar XP no amor.</p>
-    <p class="trecho">E claro, se não fosse no tema do Mario e da Peach, não seria a gente. Porque, assim como o Mario sempre salva a Peach, você tem me salvado desde o dia que apareceu no meu mundo. Foi daí que veio o nome "O anjo que me salvou" — e não um anjo qualquer, mas o Anjo Gabriel, como o mensageiro de Deus e protetor. Só que, no meu caso, você não traz só mensagens, você traz luz, traz força, traz amor… e me salva dos “Bowser” espalhados por aí.</p>
+    <p class="trecho">E claro, se não fosse no tema do Mario e da Peach, não seria a gente. Porque, assim como o Mario sempre salva a Peach, você tem me salvado desde o dia que apareceu no meu mundo. Foi daí que veio o nome "O anjo que me salvou" — e não um anjo qualquer, mas o Anjo Gabriel, como o mensageiro de Deus e protetor. Só que, no meu caso, você não traz só mensagens, você traz luz, traz força, traz amor… E me salva dos “Bowser” espalhados por aí.</p>
     <p class="trecho">Nunca vou esquecer da força que você me deu quando eu estive nos meus piores momentos. Você foi meu pilar quando eu estava sem chão, meu power-up quando minha barra de energia zerava, meu cogumelo vermelho quando eu me sentia pequena demais.</p>
     <p class="trecho">Com você, eu não sou só protegida… Eu sou amada. E não de qualquer jeito, mas de um jeito que me faz sentir a mulher mais sortuda desse universo — e dos outros também, porque se existir um Reino Estelar, com certeza é lá que nosso amor nasceu.</p>
     <p class="trecho">O que mais amo em nós é que tudo virou nosso. Não existe mais só "eu", tudo que fazemos agora tem um "nós" embutido, como um cheat code secreto da vida. Planejamos juntos, sonhamos juntos, rimos juntos… e, se precisar, enfrentamos cada fase difícil lado a lado, segurando um ao outro, prontos pra apertar Continue quantas vezes for necessário.</p>

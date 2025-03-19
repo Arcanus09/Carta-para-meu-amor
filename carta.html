@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CARTA PARA O MEU AMOR</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+.container p, .container .trecho {
+  line-height: 1.6; /* Aumenta o espaçamento entre linhas */
+}
+    body {
+      font-family: 'Press Start 2P', cursive;
+      background: #5d94fb;
+      background-size: cover;
+      margin: 0;
+      padding: 20px;
+      color: #fff;
+      text-shadow: 2px 2px 4px #000;
+    }
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    h1 {
+      font-size: 2rem;
+      text-align: center; /* Centraliza o título */
+      margin-bottom: 20px;
+      animation: jump 1s infinite;
+    }
+    .trecho {
+      opacity: 0;
+      transition: opacity 1s ease;
+      margin-bottom: 20px;
+      font-size: 1rem;
+    }
+    .trecho.visivel {
+      opacity: 1;
+    }
+    /* Efeito de pulo para o título, remetendo ao salto do Mario */
+    @keyframes jump {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Carta Aberta para o Amor da Minha Vida</h1>
+    <p class="trecho">Você completou desafios, desvendou enigmas e agora...</p>
+    <p class="trecho">Tenho uma mensagem especial que aguarda você.</p>
+    <p class="trecho">Meu amor, eu não poderia começar essa carta sem te chamar de meu amor.</p>
+    <p class="trecho">Achou que não ia ter carta por aqui também? Pois tem carta aqui, tem carta física, e se duvidar, eu mando até uma mensagem no correio dos Toads para garantir que você leia tudo direitinho. Então se prepare, porque hoje é dia de farmar XP no amor.</p>
+    <p class="trecho">E claro, se não fosse no tema do Mario e da Peach, não seria a gente. Porque, assim como o Mario sempre salva a Peach, você tem me salvado desde o dia que apareceu no meu mundo. Foi daí que veio o nome "O anjo que me salvou" — e não um anjo qualquer, mas o Anjo Gabriel, como o mensageiro de Deus e protetor. Só que, no meu caso, você não traz só mensagens, você traz luz, traz força, traz amor… e me salva dos “Bowser” espalhados por aí.</p>
+    <p class="trecho">Nunca vou esquecer da força que você me deu quando eu estive nos meus piores momentos. Você foi meu pilar quando eu estava sem chão, meu power-up quando minha barra de energia zerava, meu cogumelo vermelho quando eu me sentia pequena demais.</p>
+    <p class="trecho">Com você, eu não sou só protegida… Eu sou amada. E não de qualquer jeito, mas de um jeito que me faz sentir a mulher mais sortuda desse universo — e dos outros também, porque se existir um Reino Estelar, com certeza é lá que nosso amor nasceu.</p>
+    <p class="trecho">O que mais amo em nós é que tudo virou nosso. Não existe mais só "eu", tudo que fazemos agora tem um "nós" embutido, como um cheat code secreto da vida. Planejamos juntos, sonhamos juntos, rimos juntos… e, se precisar, enfrentamos cada fase difícil lado a lado, segurando um ao outro, prontos pra apertar Continue quantas vezes for necessário.</p>
+    <p class="trecho">Gabriel, meu amor, meu homem, minha vida, razão da minha existência e dos meus risos mais sinceros.</p>
+    <p class="trecho">Eu te amo mais do que as palavras conseguem expressar e mais do que eu mesma consigo provar. Você é o meu herói, meu Mario, meu anjo. Feliz aniversário, minha vida! Que o seu dia seja repleto de felicidades e realizações e que esse seja o primeiro de muitos que irei comemorar ao seu lado. Ps.: Essa carta foi feita antes do seu aniversário, mas não quis mudar esse trecho, pois mesmo de longe, pude sentir sua alegria como se estivesse perto.</p>
+    <p class="trecho">Amo você com todas as vidas extras do universo. Obrigada por ser meu amor, minha fortaleza e meu maior presente.</p>
+    <p class="trecho">Com todo o meu amor, da sua Corujinha 💖</p>
+  </div>
+
+  <script>
+    const trechos = document.querySelectorAll('.trecho');
+    let index = 0;
+    function revelarTrecho() {
+      if(index < trechos.length) {
+        trechos[index].classList.add('visível');
+        trechos[index].classList.add('visivel'); // Garante que a classe seja aplicada
+        index++;
+        setTimeout(revelarTrecho, 10000);
+      }
+    }
+    window.addEventListener('load', revelarTrecho);
+  </script>
+</body>
+</html>
